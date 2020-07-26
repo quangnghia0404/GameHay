@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/danhSachFragment">
+
+    <fragment
+        android:id="@+id/danhSachFragment"
+        android:name="vn.edu.ntu.quangnghia.gamehay.DanhSachFragment"
+        android:label="fragment_danh_sach"
+        tools:layout="@layout/fragment_danh_sach" >
+        <action
+            android:id="@+id/action_danhSachFragment_to_hienThiFragment"
+            app:destination="@id/hienThiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hienThiFragment"
+        android:name="vn.edu.ntu.quangnghia.gamehay.HienThiFragment"
+        android:label="fragment_hien_thi"
+        tools:layout="@layout/fragment_hien_thi" />
+</navigation>
